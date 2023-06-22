@@ -1,0 +1,17 @@
+﻿@page
+@model Vtitbid.ISP20.Strizhak.Ex.Pages.DeleteModel
+@{
+	ViewBag.Title = "Deleting";
+}
+
+<h1>Удаление объекта</h1>
+<h3>Вы уверены что хотите удалить данный объект?</h3>
+
+<form method="post">
+	<input type="hidden" asp-for="@Model.DeletePrice.Id" />
+
+	<div>
+		<a asp-page="/Price" class="btn btn-secondary">Закрыть</a>
+		<button type="submit" class="btn btn-danger">Удалить</button>
+	</div>
+</form>
